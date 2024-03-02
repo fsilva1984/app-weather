@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@87.5,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 87.5;
+    font-family: "Inconsolata", monospace;
+}
+
+body {
+    background-color: rgb(78, 46, 107);
+}
+
+h1 {
+    width: 100%;
+    padding: 13px;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(195, 197, 199);
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+form {
+    width: 700px;
+    display: flex;
+    margin-top: 13px;
+    justify-content: center;
+}
+
+input {
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #f0f8ff;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(78, 46, 107);
+    border-bottom: 2px solid rgb(253, 75, 4);
+    box-shadow: 2px 1px 0px 0px #000000;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    color: rgb(253, 75, 4);
+    background-color: #4e2e6b;
+
+}
+
+.weather {
+    width: 450px;
+    height: 250px;
+    display: grid;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 3px;
+    background: #cfbc4c;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.box-dateHour {
+    display: flex;
+    justify-content: center;
+}
+
+.date {
+    margin-right: 25px;
+}
+
+.description {
+    justify-self: start;
+    margin-left: 20px;
+    font-size: x-large;
+}
+
+.lat-lon {
+    justify-self: end;
+}
+
+
+.min-max {
+    justify-self: start;
+}
+
+.min-max h2 {
+    font-size: 2.5rem;
+}
+
+.umidade {
+    text-align: center;
+    justify-self: center;
+}
+
+.wind {
+    justify-self: end;
+
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.speed {
+    padding: 0;
+    margin-right: 8px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: static;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+    h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .weather {
+        width: 90vw;
+    }
+
+    form {
+        width: 90vw;
+    }
+
+    input {
+        width: 85vw;
+    }
+}
